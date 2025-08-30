@@ -624,6 +624,38 @@ textarea{min-height:120px;resize:vertical}
   }
 }
 
+/* ===== Responsive Navbar ===== */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* default hide */
+    flex-direction: column;
+    background: #0a192f;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  nav ul.show {
+    display: flex; /* show when active */
+  }
+
+  .menu-toggle {
+    display: block; /* hamburger visible */
+  }
+}
+
+
 
 
 
